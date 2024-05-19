@@ -1,0 +1,15 @@
+Heat up the system
+&cntrl
+ imin=0, irest=0, ntx=1,
+ igb=0, ntb=1, cut=10,
+ ntc=2, ntf=2,
+ ntt=3, gamma_ln=1.0, nmropt=1,
+ tempi=0, temp0=300,
+ nstlim=10000, dt=0.002,
+ ntpr=500, ntwx=500, ntwr=500,
+/
+&wt TYPE='TEMP0',
+ istep1=0, istep2=10000,
+ value1=0, value2=300, 
+/
+&wt TYPE='END' /
